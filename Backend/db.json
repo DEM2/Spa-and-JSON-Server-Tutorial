@@ -1,0 +1,12 @@
+{
+  "usuarios": [
+    { "id": 1, "email": "daniel@mail.com", "password": "123456" },
+    { "id": 2, "email": "maria@mail.com", "password": "abcdef" }
+  ],
+  "libros": [
+    { "id": 1, "titulo": "Cien años de soledad", "autor": "García Márquez", "usuarioId": 1 },
+    { "id": 2, "titulo": "La vorágine", "autor": "José Eustasio Rivera", "usuarioId": 1 },
+    { "id": 3, "titulo": "El túnel", "autor": "Ernesto Sábato", "usuarioId": 2 },
+    { "id": 4, "titulo": "Rayuela", "autor": "Julio Cortázar", "usuarioId": 2 }
+  ]
+}
