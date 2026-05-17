@@ -43,7 +43,7 @@ Next, we run our project using the following command, which includes the db.json
 $ npm json-server db.json --port 3001
 ```
 
-The result would be the paths to the resources, which are the top-level keys in the dictionary:
+The result would be the paths to the resources, which are the top-level keys in the in the object:
 
 ```bash
 $ Endpoints:
@@ -51,6 +51,39 @@ http://localhost:3001/usuarios
 http://localhost:3001/libros
 ```
 
+## How do I use the server? 
+
+To consume the service, the native JavaScript API (fetch) is used :
+
+```javaScript
+async function peticion (url=" ", data={}){
+    const response = await fetch(url, {
+        method: " ", // post or get or delete or put/patch
+        body: data, // for example, in the case of a POST or PUT/PATCH request 
+        headers: {
+           'Content-Type': 'application/json'
+        },  //  This tells the server what type of information we are sending in the body; in this example, it is JSON. 
+    })
+}
+```
+
+## Project Structure
+
+```
+TUTORIA-SPA/
+├── Backend/
+│   ├── db.json
+│   ├── package.json
+│   └── ...
+└── Frontend/
+    └── src/
+        ├── services/   # API Calls
+        ├── styles/     # CSS and SASS Styles
+        └── views/      # Componentes y vistas
+```
+
+
 ## Author
+
 Daniel Mendoza
 Systems Engineer | Software Developer
