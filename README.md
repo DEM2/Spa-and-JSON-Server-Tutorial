@@ -50,3 +50,7 @@ $ Endpoints:
 http://localhost:3001/usuarios
 http://localhost:3001/libros
 ```
+
+## Author
+Daniel Mendoza
+Systems Engineer | Software Developer
