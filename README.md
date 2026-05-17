@@ -15,7 +15,7 @@ SPA is a type of web application that loads a single web document and updates it
 
 ## How does the JSON server work?
 
-tenemos este json
+We have our json file 
 
 ```json
 {
@@ -31,20 +31,19 @@ tenemos este json
   ]
 }
 ```
-
-intalamos en nuestro proeyecto de simulacion del  Back json server con :
+In our backend simulation project, we installed the JSON server using the following command:
 
 ```bash
-$ npm install json server 
+$ npm install json-server 
 ```
 
-y luego ejecutamos nuestro proyecto con el siguiente comando en donde se inlcuye el db.json que es nuestro json anteriormente creado y el puerto  :
+Next, we run our project using the following command, which includes the db.json file (the JSON file we created earlier) and the port:
 
 ```bash
 $ npm json-server db.json --port 3001
 ```
 
-y como resultado resives las rutas con los recuersos las claves de primer nivel del dicionario :
+The result would be the paths to the resources, which are the top-level keys in the dictionary:
 
 ```bash
 $ Endpoints:
