@@ -1,16 +1,18 @@
+import { navigate } from '../router.js'
 import { login } from '../services/api.js'
+import { register } from './RegisterBook.js'
 
 export function Login() {
   return `
-    <div class="form-container">
-      <h1>Iniciar sesión</h1>
+    <article class="login">
+      <h2>Iniciar sesión</h2>
       <form id="form-login">
         <input id="email" type="email" placeholder="Email" required />
         <input id="password" type="password" placeholder="Contraseña" required />
         <button type="submit">Entrar</button>
-        <p id="error-msg" style="color:red;display:none">Credenciales incorrectas</p>
+        <p id="error-msg">Credenciales incorrectas</p>
       </form>
-    </div>
+    </article>
   `
 }
 
@@ -28,6 +30,6 @@ export function LoginEventos() {
         document.getElementById('error-msg').style.display = 'block'
         return
       }
-      console.log("Aqui estoy")
+      navigate('/libros')
     })
 }

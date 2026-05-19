@@ -10,3 +10,13 @@ export async function login(email, password) {
     localStorage.setItem('usuario', JSON.stringify(usuarios[0]))
     return usuarios[0]
 }
+
+export async function postBook(book) {
+    const res = await fetch(`${BASE_URL}/libros`, {
+        method:'post',
+        headers: {
+             'Content-Type': 'application/json'
+        },
+        body: book
+    })
+}

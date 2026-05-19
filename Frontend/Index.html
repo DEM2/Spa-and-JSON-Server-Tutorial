@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/styles/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
-<body id="app">
+
+<body>
+    <main id="app"></main>
+
+    <section class="layout">
+
+  <!-- FORM CARD -->
+  <article class="card">
+    <header class="card__header">
+      <h2><i class="ti ti-book-plus"></i> Registrar libro</h2>
+    </header>
+
+    <form class="card__body" id="form-libro" novalidate>
+      <input type="text" placeholder="Título" />
+      <input type="text" placeholder="Autor" />
+
+      <fieldset class="field--two-col">
+        <input type="number" placeholder="Año" />
+        <select>
+          <option value="" disabled selected>Género</option>
+          <option>Novela</option>
+          <option>Ficción</option>
+          <option>Ciencia</option>
+          <option>Historia</option>
+          <option>Poesía</option>
+        </select>
+      </fieldset>
+
+      <input type="text" placeholder="ISBN" />
+      <textarea placeholder="Descripción..."></textarea>
+
+      <button class="btn-submit" type="submit">
+        <i class="ti ti-plus"></i> Agregar libro
+      </button>
+    </form>
+  </article>
+
+  <!-- TABLE CARD -->
+  <article class="card">
+    <header class="card__toolbar">
+      <h2><i class="ti ti-books"></i> Catálogo <span class="badge">0</span></h2>
+      <search>
+        <i class="ti ti-search" aria-hidden="true"></i>
+        <input type="search" placeholder="Buscar..." />
+      </search>
+    </header>
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Título</th>
+          <th scope="col">Autor</th>
+          <th scope="col">Año</th>
+          <th scope="col">Género</th>
+          <th scope="col"><span class="sr-only">Acciones</span></th>
+        </tr>
+      </thead>
+      <tbody id="books-tbody"></tbody>
+    </table>
+
+    <figure class="empty-state">
+      <i class="ti ti-books" aria-hidden="true"></i>
+      <figcaption>
+        <p>Sin libros registrados</p>
+        <small>Los libros que agregues aparecerán aquí</small>
+      </figcaption>
+    </figure>
+  </article>
+
+</section>
     <script type="module" src="./src/app.js"></script>
 </body>
+
 </html>

@@ -1,8 +1,9 @@
 import { Login, LoginEventos } from './views/Login.js'
+import { register } from './views/RegisterBook.js'
 
 const routes = {
   '/login': { view: Login , eventos: LoginEventos },
- // '/libros': { view: Libros, eventos: LibrosEventos },
+  '/libros': { view: register  },
 }
 
 export async function navigate(path) {
