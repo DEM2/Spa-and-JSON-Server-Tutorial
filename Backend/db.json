@@ -1,12 +1,80 @@
 {
   "usuarios": [
-    { "id": 1, "email": "daniel@mail.com", "password": "123456" },
-    { "id": 2, "email": "maria@mail.com", "password": "abcdef" }
+    {
+      "id": "1",
+      "email": "daniel@mail.com",
+      "password": "abc"
+    },
+    {
+      "id": "2",
+      "email": "maria@mail.com",
+      "password": "abcdef"
+    }
   ],
   "libros": [
-    { "id": 1, "titulo": "Cien años de soledad", "autor": "García Márquez", "usuarioId": 1 },
-    { "id": 2, "titulo": "La vorágine", "autor": "José Eustasio Rivera", "usuarioId": 1 },
-    { "id": 3, "titulo": "El túnel", "autor": "Ernesto Sábato", "usuarioId": 2 },
-    { "id": 4, "titulo": "Rayuela", "autor": "Julio Cortázar", "usuarioId": 2 }
-  ]
+    {
+      "id": "1",
+      "titulo": "Cien años de soledad",
+      "autor": "García Márquez",
+      "genero": "Novela",
+      "usuarioId": 1
+    },
+    {
+      "id": "2",
+      "titulo": "La vorágine",
+      "autor": "José Eustasio Rivera",
+      "genero": "Novela",
+      "usuarioId": 1
+    },
+    {
+      "id": "3",
+      "titulo": "El túnel",
+      "autor": "Ernesto Sábato",
+      "genero": "Ficción",
+      "usuarioId": 2
+    },
+    {
+      "id": "4",
+      "titulo": "Rayuela",
+      "autor": "Julio Cortázar",
+      "genero": "Ficción",
+      "usuarioId": 2
+    },
+    {
+      "titulo": "El amor en los tiempos del cólera",
+      "autor": "Gabriel García Márquez",
+      "genero": "Novela",
+      "usuarioId": 2,
+      "id": "L24JaXvE_WY"
+    },
+    {
+      "titulo": "El señor de las moscas",
+      "autor": "William Golding",
+      "genero": "Ficción",
+      "usuarioId": 2,
+      "id": "OSa57fH-HTQ"
+    },
+    {
+      "titulo": "1984",
+      "autor": "George Orwell",
+      "genero": "Ficción",
+      "usuarioId": 2,
+      "id": "r_7dB-9r7ws"
+    },
+    {
+      "titulo": "Los hombres que no amaban a las mujeres",
+      "autor": "Stieg Larsson",
+      "genero": "Novela",
+      "usuarioId": 2,
+      "id": "paSdDYx7ofQ"
+    },
+    {
+      "titulo": "Crónica de una muerte anunciada",
+      "autor": "Gabriel García Márquez",
+      "genero": "Novela",
+      "usuarioId": 2,
+      "id": "ND3XXraP4dk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
