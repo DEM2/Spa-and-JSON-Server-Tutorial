@@ -4,7 +4,8 @@ This project consists of building a Single Page Application (SPA) using Vanilla 
 
 ## what is SPA ? 
 
-SPA is a type of web application that loads a single web document and updates its content by manipulating the DOM, dynamically rendering one section or another. It remains structured content but changes the view based on user actions; this is equivalent to implementing a multi-page application without actually being one. 
+A Single Page Application (SPA) is a web application that lives entirely within a single HTML page. When the user opens it for the first time, the browser downloads everything it needs to work: the base HTML, the CSS, and the JavaScript. From that point on, the page never reloads, no matter how many screens or sections the user navigates through.
+What changes visually is not the page itself, but its internal content, which is dynamically updated by JavaScript manipulating the DOM. When the application needs new data, it requests it from the server in the background through an API, witho 
 
 ## what is Json Server ? 
 
