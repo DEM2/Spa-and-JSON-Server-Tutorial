@@ -1,6 +1,6 @@
 # Creating a Single-Page Application (SPA) with Vanilla JS and JSON Server
 
-This project consists of building a Single Page Application (SPA) using Vanilla JavaScript and JSON Server. It is divided into two stages: an authentication flow where the user can log in, and a book management system with full CRUD functionality.  
+This project consists of building a Single Page Application (SPA) using Vanilla JavaScript and JSON Server. It is divided into two stages: an authentication flow where the user can log in, and a book management system with CRUD functions for adding and reading.  
 
 ## what is SPA ? 
 
